@@ -1,40 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather App Project
 
-## Getting Started
+## Overview
+This Weather App Project is designed to provide users with up-to-date weather information for any location around the world. Whether you're planning a trip or just curious about the weather in different places, this app has got you covered.
 
-First, run the development server:
+## Features
+- **Current Weather:** Get real-time weather updates including temperature, humidity, wind speed, and more.
+- **Location-Based:** Automatically detects your current location or allows you to search for any location worldwide.
+- **User-Friendly Interface:** Simple and intuitive design for easy navigation and use.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- **Frontend:** NEXT.JS CSS, TAILWIND CSS 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **APIs:** Utilizes weather data from a reliable weather API (e.g., OpenWeatherMap, Weatherstack, etc.).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## How to Use
+1. Clone this repository to your local machine.
+2. Install dependencies by running `npm install`.
+3. Obtain API keys from the chosen weather API provider and replace them in the appropriate files.
+4. Run the application using `node app.js` or any other command specified in the project.
+5. Access the app through your web browser.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Future Improvements
+- **Mobile Compatibility:** Enhance responsiveness for better usability on mobile devices.
+- **Additional Features:** Implement features such as weather alerts, historical weather data, etc.
+- **Localization:** Support multiple languages for broader accessibility.
