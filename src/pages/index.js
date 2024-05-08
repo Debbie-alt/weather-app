@@ -44,9 +44,9 @@ export default function Home() {
   return (
     <main className=" w-screen flex flex-col items-center">
       <Navbar />
-      <div className={`flex min-h-screen flex-col   ${inter.className}`}>
+      <div className={`flex min-h-screen flex-col ${inter.className}`}>
         <WeatherDetails 
-         error={error}
+         
          weatherData={weatherData}
         />
         {weatherData ? (
@@ -67,6 +67,7 @@ export default function Home() {
           city={city}
           setCity={setCity}
           loading={loading}
+          error={error}
         />
       </div>
     </main>
