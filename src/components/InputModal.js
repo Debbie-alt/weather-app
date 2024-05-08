@@ -5,21 +5,11 @@ import { X } from 'lucide-react';
 
 
 const InputModal = ({openModal, setOpenModal, handleSubmit,  city, setCity}) => {
-//       const [openModal, setOpenModal] = useState('hidden')
 
-//   const handleOpenModal =()=>{
-//         openModal == 'hidden' ? setOpenModal('block') :setOpenModal('hidden')
-//   }
-//   const getWeather =(e)=>{
-//       e.preventDefault();
-//       setOpenModal('hidden')
-//   }
      
   return (
         <section className=''>
-                   {/* <button className={styles.button} onClick={handleOpenModal}>
-                  Check Weather Forecast
-             </button> */}
+                  
               <div className={`px-10 py-6 backdrop-blur-lg bg-stone-50 flex flex-col top-[20%] w-[70vw] md:w-[30vw] space-y-5 ${openModal} rounded-xl border-2 ${styles.modal}`}>
               <X strokeWidth={1.25}  className='hover:opacity-70 absolute right-[5%] top-4' onClick={()=>{
                   setOpenModal('hidden')
