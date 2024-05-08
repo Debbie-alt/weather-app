@@ -11,6 +11,7 @@ export default function Home() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false)
 
   const handleOpenModal = () => {
     openModal == "hidden" ? setOpenModal("block") : setOpenModal("hidden");
@@ -23,12 +24,15 @@ export default function Home() {
       const response = await fetch(
         `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
       );
+      setLoading(true)
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
       const data = await response.json();
+    
       setWeatherData(data); // Store fetched weather data in state
       setOpenModal("hidden"); // Hide the modal from user's view again
+      setLoading(false)
       setError(null);
     } catch (error) {
       setError(
@@ -62,6 +66,7 @@ export default function Home() {
           handleSubmit={handleGetWeather}
           city={city}
           setCity={setCity}
+          loading={loading}
         />
       </div>
     </main>
