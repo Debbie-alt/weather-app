@@ -20,7 +20,7 @@ const InputModal = ({openModal, setOpenModal, handleSubmit,  city, setCity}) => 
                    {/* <button className={styles.button} onClick={handleOpenModal}>
                   Check Weather Forecast
              </button> */}
-              <div className={`px-10 py-6 backdrop-blur-lg bg-stone-50  top-[20%] w-[70vw] md:w-[35vw] space-y-5 ${openModal} rounded-xl border-2 ${styles.modal}`}>
+              <div className={`px-10 py-6 backdrop-blur-lg bg-stone-50 flex flex-col top-[20%] w-[70vw] md:w-[30vw] space-y-5 ${openModal} rounded-xl border-2 ${styles.modal}`}>
               <X strokeWidth={1.25}  className='hover:opacity-70 absolute right-[5%] top-4' onClick={()=>{
                   setOpenModal('hidden')
               }}/>

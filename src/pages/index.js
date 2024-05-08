@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import InputModal from "@/components/InputModal";
@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   const API_KEY = "d909c9955626445ba48123536240805";
-  const handleSubmit = async (e) => {
+  const handleGetWeather = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch(
@@ -59,7 +59,7 @@ export default function Home() {
         <InputModal
           openModal={openModal}
           setOpenModal={setOpenModal}
-          handleSubmit={handleSubmit}
+          handleSubmit={handleGetWeather}
           city={city}
           setCity={setCity}
         />
