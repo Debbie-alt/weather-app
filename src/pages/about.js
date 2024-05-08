@@ -5,8 +5,8 @@ const about = () => {
   return (
             <>
             <Navbar/>
-                 <div className="w-screen bg-red-500 flex flex-col items-center">
-                     <h1 className="font-semibold text-center text-3xl">About Forecastify</h1>
+                 <div className="w-screen flex flex-col items-center py-5">
+                     <h1 className="font-semibold text-center text-2xl">About Forecastify</h1>
                  </div>
             </>
   );

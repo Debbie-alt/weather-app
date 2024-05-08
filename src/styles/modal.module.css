@@ -5,6 +5,7 @@
       border-radius: 15px;
       color: #fff;
       text-align: center;
+      margin-top: 15px;
     }
     .button:hover{
       opacity: 0.7;
@@ -21,4 +22,9 @@
     }
     .modalInput:focus{
       outline-color: orange;
+    }
+    @media (max-width:768px) {
+        .modalInput{
+          width: 100%;
+        }
     }
