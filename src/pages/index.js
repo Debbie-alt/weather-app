@@ -20,11 +20,11 @@ export default function Home() {
   const API_KEY = "d909c9955626445ba48123536240805";
   const handleGetWeather = async (e) => {
     e.preventDefault();
+    setLoading(true)
     try {
       const response = await fetch(
         `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
       );
-      setLoading(true)
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
