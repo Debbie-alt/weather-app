@@ -8,7 +8,7 @@ const contact = () => {
     <Navbar/>
     <div className="w-screen flex flex-col items-center py-5 space-y-5">
                      <h1 className="font-semibold text-center text-2xl">Contact us at:</h1>
-                     <p className="w-[60vw] text-center">Have feedback or questions about ForeCastify? We'd love to hear from you! Contact us at funmmy565@gmail.com or connect with us on social media.</p>
+                     <p className="w-[60vw] text-center">Have feedback or questions about ForeCastify? We would love to hear from you! Contact us at funmmy565@gmail.com or connect with us on social media.</p>
       
        </div>
     </>
