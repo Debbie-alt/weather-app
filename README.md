@@ -11,7 +11,7 @@ This Weather App Project is designed to provide users with up-to-date weather in
 ## Technologies Used
 - **Frontend:** NEXT.JS CSS, TAILWIND CSS 
 
-- **APIs:** Utilizes weather data from a reliable weather API (e.g., OpenWeatherMap, Weatherstack, etc.).
+- **APIs:** Utilizes weather data from a reliable weather API (https://www.weatherapi.com/).
 
 ## How to Use
 1. Clone this repository to your local machine.
